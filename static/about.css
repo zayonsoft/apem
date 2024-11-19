@@ -1,11 +1,12 @@
 section.about {
     min-height: 20vh;
-    padding: 10px;
+    padding: 15px 10px;
     background-color: #e1e1e1;
     display: grid;
     gap: 6px;
     align-content: flex-start;
     font-family: system-ui;
+    position: relative;
 }
 
 div.vision-cover {
@@ -18,12 +19,15 @@ div.vision-cover {
         "vision-header vision-header"
         "vision-image vision-text"
     ;
+
+    position: relative;
+    z-index: 1;
 }
 
 .mini-header {
     background-color: #343869;
     padding: 10px;
-    border-radius: 3px;
+    border-radius: 5px;
     color: whitesmoke;
     text-align: center;
 }
@@ -47,7 +51,7 @@ div.vision-image {
     display: grid;
     align-content: start;
     gap: 3px;
-    padding: 8px;
+    padding: 15px;
     box-shadow: -0px 0px 2px rgb(114, 42, 42);
     border-radius: 2px;
     grid-area: vision-text;
@@ -73,6 +77,9 @@ div.mission-cover {
         "mission-header mission-header"
         " mission-text mission-image"
     ;
+
+    position: relative;
+    z-index: 1;
 }
 
 .mission-cover .mini-header {
@@ -96,14 +103,81 @@ div.mission-image {
     display: grid;
     align-content: start;
     gap: 3px;
-    padding: 8px;
+    padding: 15px;
     box-shadow: 0px 0px 2px rgb(114, 42, 42);
     border-radius: 2px;
     grid-area: mission-text;
 }
 
+div.church-bg1 {
+    position: absolute;
+    bottom: 0;
+    height: 150px;
+    width: 150px;
+    left: 0%;
+    background: url(./icons/church_red.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    opacity: 0.12;
+}
+
+div.church-bg2 {
+    position: absolute;
+    top: 0;
+    height: 150px;
+    width: 150px;
+    right: 0%;
+    background: url(./icons/church_red.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    opacity: 0.12;
+}
+
+div.bible-bg1 {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    height: 150px;
+    width: 150px;
+    background: url(./icons/bible_1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    opacity: 0.05;
+}
+
+div.bible-bg2 {
+    position: absolute;
+    bottom: 0;
+    right: 0%;
+    height: 150px;
+    width: 150px;
+    background: url(./icons/bible_1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    opacity: 0.05;
+}
 
 @media screen and (max-width:600px) {
+    div.church-bg1 {
+        opacity: 0.05;
+    }
+
+    div.church-bg2 {
+        opacity: 0.05;
+    }
+
+    div.bible-bg1 {
+        opacity: 0.05;
+    }
+
+    div.bible-bg2 {
+        opacity: 0.05;
+    }
+
     section.about {
         gap: 10px;
     }

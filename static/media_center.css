@@ -1,0 +1,39 @@
+section.media-center {
+    min-height: 20vh;
+    padding: 15px 10px;
+    background-color: #9a7878;
+    background-color: rgb(177, 177, 177);
+    display: grid;
+    gap: 6px;
+    align-content: flex-start;
+    font-family: system-ui;
+    position: relative;
+}
+
+.media-center .section-header {
+    color: rgb(46, 39, 134);
+    font-size: 1.5rem;
+}
+
+.media-cover {
+    padding: 10px;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+    justify-content: center;
+}
+
+.each-picture {
+    padding: 7px;
+    background-color: #e2e2e2;
+    border-radius: 3px;
+    box-shadow: 0px 1px 2px grey;
+}
+
+
+.media-img {
+    max-width: 100%;
+    border-radius: 3px;
+    object-fit: contain;
+    display: grid;
+}
