@@ -24,7 +24,7 @@ header {
     display: grid;
     grid-template-columns: 0.6fr 1fr;
     align-items: center;
-    padding: 8px;
+    padding: 5px;
     padding-left: var(--side-padding);
     background-color: rgba(70, 59, 59, 0.7);
     justify-content: space-between;

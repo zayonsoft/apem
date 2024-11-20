@@ -1,6 +1,6 @@
 section.media-center {
     min-height: 20vh;
-    padding: 15px 10px;
+    padding: 5px;
     background-color: #9a7878;
     background-color: rgb(177, 177, 177);
     display: grid;
@@ -8,18 +8,38 @@ section.media-center {
     align-content: flex-start;
     font-family: system-ui;
     position: relative;
+    background: linear-gradient(rgba(75, 34, 34, 0.9) 0%, rgba(66, 31, 31, 0.6) 50%, rgba(88, 14, 14, 0.7) 80%, rgba(88, 14, 14, 0.95) 100%), url(./background/bible.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.media-center .header-box {
+    height: 20vh;
+    display: grid;
+    align-content: center;
 }
 
 .media-center .section-header {
-    color: rgb(46, 39, 134);
-    font-size: 1.5rem;
+    color: rgb(255, 248, 248);
+}
+
+.media-cover-container {
+    width: 95%;
+    max-width: 900px;
+    min-height: 45vh;
+    margin: auto;
+    display: grid;
+    gap: 5px;
+    align-content: start;
 }
 
 .media-cover {
     padding: 10px;
     max-width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 250px));
+    gap: 15px;
     justify-content: center;
 }
 
@@ -33,7 +53,26 @@ section.media-center {
 
 .media-img {
     max-width: 100%;
+    min-height: 200px;
     border-radius: 3px;
     object-fit: contain;
-    display: grid;
+    margin: auto;
+    display: block;
+}
+
+.view-more-btn {
+    justify-self: right;
+    color: whitesmoke;
+    font-family: system-ui;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: 0.5s ease;
+}
+
+.view-more-btn:hover {
+    color: rgb(206, 214, 224);
+}
+
+.view-more-btn i {
+    font-size: 0.7rem;
 }
