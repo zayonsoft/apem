@@ -1,6 +1,6 @@
 section.light {
     min-height: 40vh;
-    background: linear-gradient(rgba(88, 14, 14, 0.95) 0%, rgba(88, 14, 14, 0.6) 20%, rgba(78, 50, 50, 0.6) 50%, rgba(88, 14, 14, 0.5) 100%), url(./background/fire_lamps.jpg);
+    background: linear-gradient(rgba(88, 14, 14, 0.9) 0%, rgba(88, 14, 14, 0.7) 20%, rgba(71, 31, 31, 0.7) 50%, rgba(88, 14, 14, 0.5) 100%), url(./background/fire_lamps.jpg);
     background-size: cover;
     background-position: center;
     display: grid;
@@ -10,6 +10,6 @@ section.light {
 
 div.light-text-cover {
     text-align: center;
-    color: whitesmoke;
+    color: white;
     font-family: cursive;
 }

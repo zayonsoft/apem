@@ -9,6 +9,11 @@ section.about {
     position: relative;
 }
 
+div.mision-vision-cover {
+    display: grid;
+    gap: 15px;
+}
+
 div.vision-cover {
     display: grid;
     grid-template-columns: 1fr 1fr;

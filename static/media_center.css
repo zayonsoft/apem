@@ -1,8 +1,6 @@
 section.media-center {
     min-height: 20vh;
     padding: 5px;
-    background-color: #9a7878;
-    background-color: rgb(177, 177, 177);
     display: grid;
     gap: 6px;
     align-content: flex-start;
@@ -45,7 +43,7 @@ section.media-center {
 
 .each-picture {
     padding: 7px;
-    background-color: #e2e2e2;
+    background-color: #e0e0e0;
     border-radius: 3px;
     box-shadow: 0px 1px 2px grey;
 }
@@ -53,7 +51,6 @@ section.media-center {
 
 .media-img {
     max-width: 100%;
-    min-height: 200px;
     border-radius: 3px;
     object-fit: contain;
     margin: auto;

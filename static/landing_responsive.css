@@ -80,6 +80,11 @@
         background-color: whitesmoke;
     }
 
+    .fixed-header .nav-links:hover {
+        background-color: whitesmoke;
+        color: #343869;
+    }
+
     div.nav-btn-cover {
         display: block;
         grid-area: navbtn;

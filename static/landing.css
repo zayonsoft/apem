@@ -31,7 +31,6 @@ header {
 }
 
 .fixed-header {
-    background-color: #d32f2f;
     background-color: #343869;
     position: fixed;
     top: 0;
@@ -81,7 +80,7 @@ div.nav-links-container {
 }
 
 .nav-links:hover {
-    color: #aa2727;
+    color: #024dee;
 }
 
 div.nav-btn-cover {
@@ -100,28 +99,28 @@ div.home-content-cover {
     width: 80%;
     margin: auto;
     display: grid;
-    gap: 5px;
+    gap: 15px;
 }
 
 p.welcome {
     color: #ffebeb;
-    font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     text-align: center;
     line-height: 1;
+    font-weight: 500;
 }
 
 .welcome-text {
-    font-size: 3.0rem;
+    font-size: 4.0rem;
     text-align: center;
-    line-height: 1;
+    line-height: 0.9;
     color: #ffebeb;
     text-transform: capitalize;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .sub-welcome {
-    line-height: 1;
+    line-height: 2.5;
     font-size: 1.1rem;
     text-align: center;
     color: #e0d1d1;
