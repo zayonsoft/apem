@@ -1,66 +1,86 @@
 section.services {
     position: relative;
-    padding: 0px;
+    padding: 15px;
     background-color: #d4d4d4;
     display: grid;
-    gap: 10px;
-}
-
-.services .header-box {
-    background: linear-gradient(rgba(77, 21, 21, 0.87), rgba(80, 23, 23, 0.87)), url(./background/hands_raised1.jpg);
-    height: 45vh;
+    grid-template-columns: 1fr 1fr;
     background-position: center;
-    display: grid;
-    align-content: center;
-}
-
-.services .section-header {
-    color: rgb(255, 248, 248);
-}
-
-div.service-cover {
-    display: grid;
-    gap: 15px;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 280px));
-    justify-content: center;
-    align-content: center;
-    min-height: 40vh;
-    width: 95%;
-    max-width: 900px;
-    padding: 10px;
-    margin: auto;
-    font-family: system-ui;
-}
-
-div.each-service {
-    display: grid;
-    text-align: center;
     gap: 10px;
-    min-height: 140px;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 2px #d32f2f;
+    background-color: #611b1b;
+    padding-left: var(--left-contact-pading);
+    padding-right: var(--left-contact-pading);
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-.service-head {
-    color: #701d1d;
-    padding: 10px 2px;
-}
+/* .sub-section inside donation.css */
 
-ul.schedule-cover {
-    list-style-type: none;
+.left-service {
+    width: 90%;
     display: grid;
-    gap: 5px;
-    text-align: left;
+    gap: 25px;
+    align-self: flex-start;
 }
 
-span.schedule-icon {
-    color: #454a5a;
+.service-header {
+    text-align: left;
+    font-weight: 500;
+    color: whitesmoke;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+
+.service-sub-header-text {
+    color: rgb(218, 218, 218);
+    /* text-align: justify; */
     font-size: 0.9rem;
 }
 
-span.schedule-text {
-    color: #47494d;
-    font-size: 0.85rem;
+.right-service {
+    display: grid;
+    gap: 25px;
+}
 
+.right-service .service-header {
+    text-align: center;
+}
+
+.services-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    justify-content: center;
+}
+
+.each-service {
+    background-color: #e4e4e4;
+    padding: 20px;
+    display: grid;
+    gap: 5px;
+    border-radius: 5px;
+    min-height: 130px;
+    width: 230px;
+    max-width: 95%;
+    justify-self: center;
+    box-sizing: border-box;
+}
+
+.service-name {
+    color: rgb(15, 30, 104);
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.service-desc {
+    display: grid;
+    gap: 10px;
+}
+
+.each-desc {
+    color: #1c2235;
+    font-size: 0.9rem;
+}
+
+.detail-icon {
+    color: #a30404;
 }

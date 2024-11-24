@@ -28,7 +28,7 @@ section.media-center {
     min-height: 45vh;
     margin: auto;
     display: grid;
-    gap: 5px;
+    gap: 15px;
     align-content: start;
 }
 
@@ -58,16 +58,22 @@ section.media-center {
 }
 
 .view-more-btn {
-    justify-self: right;
-    color: whitesmoke;
+    justify-self: center;
+    background-color: whitesmoke;
+    color: #970808;
+    font-weight: 600;
     font-family: system-ui;
     text-decoration: none;
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     transition: 0.5s ease;
+    padding: 10px;
+    min-width: 80px;
+    text-align: center;
+    border-radius: 25px;
 }
 
 .view-more-btn:hover {
-    color: rgb(206, 214, 224);
+    background-color: rgb(206, 214, 224);
 }
 
 .view-more-btn i {

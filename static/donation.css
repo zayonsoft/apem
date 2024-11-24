@@ -17,7 +17,6 @@ div.left-donation {
     display: grid;
     gap: 10px;
     font-family: system-ui;
-
 }
 
 .donation-header {
@@ -214,7 +213,7 @@ button.close-giving:hover {
     gap: 5px;
     padding: 8px;
     border-radius: 3px;
-    box-shadow: 0px 0px 2px rgb(44, 54, 59);
+    box-shadow: 0px 0px 1px rgb(44, 54, 59);
 }
 
 .bank-name,
