@@ -30,9 +30,18 @@ section.services {
     font-size: 1.5rem;
 }
 
+.bigger-para {
+    font-size: 0.95rem;
+}
+
+.emphasize {
+    font-weight: 500;
+    font-style: oblique;
+}
+
 .service-sub-header-text {
-    color: rgb(218, 218, 218);
-    /* text-align: justify; */
+    color: rgb(236, 226, 226);
+    text-align: justify;
     font-size: 0.9rem;
 }
 
@@ -83,4 +92,11 @@ section.services {
 
 .detail-icon {
     color: #a30404;
+}
+
+@media screen and (max-width: 600px) {
+    section.services {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
 }

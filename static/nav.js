@@ -62,7 +62,41 @@ function unfixHeader() {
     header.classList.remove("fixed-header");
 }
 
+function activateNavLinkScroll() {
+    let navLinks = document.querySelectorAll(".scroll-link");
+    navLinks.forEach(function (link) {
+        link.addEventListener("click", function (e) {
+            e.preventDefault();
+            let clickedElement = e.currentTarget;
+            let locationClass = clickedElement.dataset.location;
+            let locationElement = document.querySelector(`section.${locationClass}`);
+
+            let header = document.querySelector("header");
+
+            let elementPosition = locationElement.offsetTop;
+
+            let headerHeight = header.getBoundingClientRect().height;
+            let scrollPosition = elementPosition - headerHeight;
+
+            let navLinks = document.querySelector("div.nav-links-cover");
+            let navLinksHeight = navLinks.getBoundingClientRect().height;
+
+            if (header.classList.contains("opened-nav")) {
+                scrollPosition = scrollPosition + navLinksHeight;
+            }
+
+            scrollTo({
+                "left": 0,
+                "top": scrollPosition,
+            })
+
+
+        });
+    });
+}
+
 document.addEventListener("DOMContentLoaded", function () {
     activateNavControl();
     activateNavFixing();
+    activateNavLinkScroll();
 });

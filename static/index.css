@@ -1,3 +1,7 @@
+* {
+    scroll-behavior: smooth;
+}
+
 .section-header {
     font-family: verdana;
     text-align: center;
