@@ -269,6 +269,12 @@ button.clipboard:hover {
     display: inline;
 }
 
+.show-copied {
+    color: #525252;
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+
 @media screen and (max-width: 600px) {
     section.donate {
         grid-template-columns: 1fr;

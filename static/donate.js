@@ -77,11 +77,16 @@ function activateCopyToClipboard() {
 
 }
 
+
 let ID;
 function activateCopied(clickedBtn) {
+    deactivateCopied();
     clearTimeout(ID);
+    let btnParent = clickedBtn.parentElement;
+    let copyText = btnParent.querySelector("span.show-copied");
     clickedBtn.classList.remove("not-copied");
     clickedBtn.classList.add("copied");
+    copyText.innerText = `copied`;
     ID = setTimeout(deactivateCopied, 1500);
 }
 
@@ -90,6 +95,10 @@ function deactivateCopied() {
     btns.forEach(function (btn) {
         btn.classList.remove("copied");
         btn.classList.add("not-copied");
+    });
+    let copyTexts = document.querySelectorAll(".show-copied");
+    copyTexts.forEach(function (text) {
+        text.innerText = ``;
     });
 }
 
