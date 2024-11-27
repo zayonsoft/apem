@@ -85,9 +85,11 @@ function activateNavLinkScroll() {
                 scrollPosition = scrollPosition + navLinksHeight;
             }
 
+            console.log(scrollPosition);
+
             scrollTo({
                 "left": 0,
-                "top": scrollPosition,
+                "top": Math.ceil(scrollPosition),
             })
 
 
